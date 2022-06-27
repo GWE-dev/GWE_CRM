@@ -1,0 +1,27 @@
+{% block page_content %}
+<h1>Project GWE</h1>
+<div class="row">
+{ CorePsaInvestisseurs }
+
+
+<table>
+    <tr>
+        <th>Fields : </th>
+
+    </tr>
+    {% for item in CorePsaInvestisseurs %}
+    <tr> 
+        <td>{{ item.id }}</td>
+        <td>{{ item.brand }}</td>
+        <td>{{ item.commercial_name }}</td>
+        <td>{{ item.address }}</td>
+        <td>{{ item.address_additional_information }}</td>
+        <td>{{ item.zipe_code }}</td>
+        <td>{{ item.cityvarchar }}</td>
+        <td>{{ item.investisseur }}</td>	
+    </tr>
+    {% endfor %}
+</table>
+
+
+{% endblock %}
